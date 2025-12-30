@@ -31,6 +31,10 @@ Open http://localhost:5173 to access the UI.
 - `src/utils/schema.ts` – Minimal utilities for resolving `$ref`s and extracting schemas for responses/requests.
 - `config/sample-console.json` – Reference console configuration targeting the public Petstore spec.
 
+## Contributor Guide
+
+See `AGENTS.md` for repository guidelines covering structure, commands, coding conventions, and pull request expectations.
+
 ## Next Steps
 
 - Persist user-supplied tokens and last-used servers.
