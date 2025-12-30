@@ -1,0 +1,37 @@
+{
+  "title": "Petstore Admin",
+  "specSource": {
+    "type": "url",
+    "url": "https://petstore3.swagger.io/api/v3/openapi.json"
+  },
+  "security": {
+    "type": "bearer",
+    "token": ""
+  },
+  "collections": [
+    {
+      "id": "pets",
+      "label": "Pets",
+      "path": "/pet/findByStatus",
+      "detailPath": "/pet/{petId}",
+      "idParam": "petId",
+      "displayField": "name",
+      "description": "Manage registered pets",
+      "query": {
+        "searchParam": "tags",
+        "pageParam": "page",
+        "pageSizeParam": "limit",
+        "defaultPageSize": 25
+      }
+    },
+    {
+      "id": "orders",
+      "label": "Orders",
+      "path": "/store/inventory",
+      "detailPath": "/store/order/{orderId}",
+      "idParam": "orderId",
+      "displayField": "id",
+      "description": "Track store orders"
+    }
+  ]
+}

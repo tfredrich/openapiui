@@ -1,0 +1,55 @@
+{
+  "title": "Agenteux.ai Admin",
+  "specSource": {
+    "type": "url",
+    "url": "https://apidocs.agenteux.ai/f457c5d9-b980-4073-8b2c-2f8ce9d343exf"
+  },
+  "security": {
+    "type": "bearer",
+    "token": ""
+  },
+  "collections": [
+    {
+      "id": "prompts",
+      "label": "Prompts",
+      "path": "/prompts",
+      "detailPath": "/prompts/{promptId}",
+      "idParam": "promptId",
+      "displayField": "name",
+      "description": "Templatized AI prompts",
+      "query": {
+        "searchParam": "filter",
+        "pageParam": "page",
+        "pageSizeParam": "limit",
+        "defaultPageSize": 25
+      }
+    },
+    {
+      "id": "schemas",
+      "label": "Schemas",
+      "path": "/schemas",
+      "detailPath": "/schemas/{schemaId}",
+      "idParam": "schemaId",
+      "displayField": "name",
+      "description": "Structured output schemas"
+    },
+    {
+      "id": "domains",
+      "label": "Custom Domains",
+      "path": "/domains",
+      "detailPath": "/domains/{domainId}",
+      "idParam": "domainId",
+      "displayField": "name",
+      "description": "Custom (white label) domains"
+    },
+    {
+      "id": "apikeys",
+      "label": "API Keys",
+      "path": "/apikeys",
+      "detailPath": "/apikeys/{apiKeyId}",
+      "idParam": "apiKeyId",
+      "displayField": "name",
+      "description": "Static API keys"
+    }
+  ]
+}
